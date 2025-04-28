@@ -101,7 +101,7 @@ We use ROUGE F1 scores for evaluation:
 ```bash
 python baseline_model_run.py
 ```
-2. Run one the experiments
+2. Run one of the experiments
 ```bash
 python run_data_augmentation.py
 python run_label_smoothing.py
@@ -122,4 +122,11 @@ conda activate torch_env
 conda install pytorch==2.3.0 torchvision==0.18.0 torchaudio==2.3.0 cudatoolkit=12.1 -c pytorch -c nvidia
 conda install -c conda-forge numpy matplotlib tokenizers datasets
 pip install rouge-score transformers tqdm
+```
+
+Alternatively,
+```bash
+conda create -n torch_env python=3.9 -y
+conda activate torch_env
+pip install -r requirements.txt
 ```
