@@ -97,6 +97,10 @@ We use ROUGE F1 scores for evaluation:
 - You need to adjust the file names for model loading and result saving.
 
 ## Getting Started
+
+> [!NOTE]  
+> Training for 5 epochs would take about 3-4 hours on a single A100 GPU. 
+
 1. Run the baseline model
 ```bash
 python baseline_model_run.py
