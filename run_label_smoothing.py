@@ -53,10 +53,9 @@ if __name__ == "__main__":
     teacher_scheduler = linear_teacher_scheduler
     criterion = LabelSmoothingLoss(smoothing=0.01, ignore_index=pad_idx)
 
-    #  Reduce batch size for GPU safety
-    train_loader = get_train_loader(tokenizer, batch_size=32, num_workers=2)
-    val_loader = get_val_loader(tokenizer, batch_size=4, num_workers=0)
-    test_loader = get_test_loader(tokenizer, batch_size=4, num_workers=0)
+    train_loader = get_train_loader(tokenizer)
+    val_loader = get_val_loader(tokenizer)
+    test_loader = get_test_loader(tokenizer)
 
     history = {
         "train_loss": [],
