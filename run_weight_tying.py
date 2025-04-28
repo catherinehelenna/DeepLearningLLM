@@ -219,7 +219,7 @@ if __name__ == "__main__":
         criterion=criterion,
         device=device,
         num_epochs=5,
-        filename="weighy_tying_model",
+        filename="weighy_tying",
         tokenizer=tokenizer,
         pad_idx=pad_idx
     )
